@@ -8,11 +8,14 @@ public class TryWIthMultipleCatchWithSameImplemetation {
         try{
             System.out.println("line-1");
             Thread.sleep(4000);
+          //  throw new IOException("My message");
             throw new IOException("My message");
         }catch (InterruptedException  | IOException | ArithmeticException e ){
             System.out.println("Error occured " + e.getMessage());
         }  catch(Exception e){
           System.out.println("Parent handling exception : " );
         }
+
+
     }
 }
