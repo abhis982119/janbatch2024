@@ -13,6 +13,6 @@ public class ThreadInterruptToNonSleepingThread {
         Thread thread = new Thread(task);
         thread.start();
 
-        thread.interrupt(); // if thread is alive and sleeping or waiting( wait/join ) only then throw error
+        thread.interrupt(); // if thread is alive and sleeping or waiting( wait/sleep/join ) only then throw error
     }
 }
